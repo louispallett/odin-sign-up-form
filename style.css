@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 * {
     /* border: 1px solid red; */
     --left-width: 40%;
@@ -24,7 +25,6 @@ body {
 a {
     text-decoration: underline;
     color: white;
-
 }
 
 a:link {
@@ -56,7 +56,10 @@ a:visited {
     }
 
     .image-text::before {
-        
+        background-image: url(./images/odin-lined.png);
+        background-size: contain;
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .image-text {
@@ -64,6 +67,9 @@ a:visited {
         font-size: clamp(1.5rem, 3rem, 5rem);
         letter-spacing: .25rem;
         font-weight: bold;
+        font-family: 'MedievalSharp', cursive;
+        font-size: 52px;
+
     }
 
     .image-credit-container {
@@ -143,21 +149,26 @@ a:visited {
         margin: .25rem 0 1rem;
         font-family: var(--font);
         font-size: 1rem;
+        border: 1px solid rgba(185, 184, 184, 0.836);
+        border-radius: 10px;
     }
 
-    input:hover {
+    /* input:hover {
         background-color: #c5eff7;
-    }
+    } */
 
     input:focus {
         background-color: #c5eff7;
+        outline: none;
+        box-shadow: 2.5px 2.5px 2.5px 0px;
+        border: 1px solid black;
     }
 
     button {
-        position: fixed;
-        bottom: 300px;
+        position: relative;
+        bottom: -100px;
         padding: 1rem 3rem;
-        background-color: #1b7a43;
+        background-color: #1f89bb;
         border-radius: 5px;
         font-family: var(--font);
         font-size: 1rem;
@@ -168,9 +179,41 @@ a:visited {
 
     button:hover {
         cursor: pointer;
-        background-color: #41ad6e;
+        background-color: #6bc7f1;
     }
 
     .lower {
         background-color: var(--right-upper-lower-background);
+    }
+
+    .lower > p {
+        padding: 100px  5rem 200px;
+    }
+
+    .lower > p > a {
+        text-decoration: none;
+        color: #1f89bb;
+        letter-spacing: -0.1rem;
+        font-weight: bold;
+    }
+
+    .lower > p > a:hover {
+        color: #6bc7f1;
+    }
+
+    .dark-theme {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-image: url(./images/dark-light.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+
+    .dark-theme:hover {
+        background-color: #c7cacc;
+        box-shadow: -2.5px 2.5px 2.5px 0px;
+        cursor: pointer;
     }
