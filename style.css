@@ -92,7 +92,7 @@ a:visited {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 30%;
+        height: 20%;
     }
 
     p {
@@ -101,16 +101,25 @@ a:visited {
     }
 
     .lower {
-        height: 70%;
+        height: 80%;
     }
 
     form {
         padding-left: 5rem;
-        
+    }
+
+    .form-inner {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .button-container {
         padding-top: 1.5rem;
+    }
+
+    input {
+        width: 20rem;
+        padding: .75rem;
     }
 
     button {
