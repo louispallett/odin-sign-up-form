@@ -6,6 +6,16 @@
     --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --right-upper-lower-background: rgba(245, 238, 238, 0.514);
     --left-padding: 5rem;
+    --font-colour: black;
+}
+
+:root.dark {
+    --font-colour: white;
+}
+
+:root.light {
+    --right-upper-lower-background: rgba(245, 238, 238, 0.514);
+    --font-colour: black;
 }
 
 :root {
@@ -47,19 +57,22 @@ a:visited {
     .image-text-container {
         position: absolute;
         top: 100px;
-        padding: 50px 0px 50px;
+        padding: 25px 0px 25px;
         background-color: var(--background-grey);
         display: flex;
         justify-content: center;
         width: var(--left-width);
         flex: 1 auto;
+        display: flex;
+        justify-content: center;
     }
 
-    .image-text::before {
-        background-image: url(./images/odin-lined.png);
-        background-size: contain;
-        max-width: 100px;
-        max-height: 100px;
+    .image-left {
+        content: url(./images/odin-lined.png);
+        padding: 0;
+        margin: 0;
+        height: 135px;
+        width: 100px;
     }
 
     .image-text {
@@ -69,7 +82,7 @@ a:visited {
         font-weight: bold;
         font-family: 'MedievalSharp', cursive;
         font-size: 52px;
-
+        padding: 45px 10px 25px;
     }
 
     .image-credit-container {
@@ -130,6 +143,7 @@ a:visited {
 
     form {
         padding-left: var(--left-padding);
+        width: 80%;
     }
 
     .form-inner {
@@ -182,6 +196,10 @@ a:visited {
         background-color: #6bc7f1;
     }
 
+    .password-mismatch::after {
+        content: "*Passwords do not match";
+    }
+
     .lower {
         background-color: var(--right-upper-lower-background);
     }
@@ -201,7 +219,7 @@ a:visited {
         color: #6bc7f1;
     }
 
-    .dark-theme {
+    .theme-toggle {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -212,7 +230,7 @@ a:visited {
         border-radius: 100%;
     }
 
-    .dark-theme:hover {
+    .theme-toggle:hover {
         background-color: #c7cacc;
         box-shadow: -2.5px 2.5px 2.5px 0px;
         cursor: pointer;
