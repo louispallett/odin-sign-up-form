@@ -197,9 +197,26 @@ a:visited {
         background-color: #6bc7f1;
     }
 
-    .password-mismatch::after {
-        content: "*Passwords do not match";
+    button:focus {
+        background-color: #6bc7f1;
     }
+
+/*     .password-mismatch::after {
+        content: "*Passwords do not match";
+        position: absolute;
+        color: rgb(252, 0, 0);
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+    .password-match::after {
+        content: "Passwords match!";
+        position: absolute;
+        bottom: 0;
+        color: rgb(0, 252, 13);
+        font-size: .9rem;
+        font-weight: bold;
+    } */
 
     .lower {
         background-color: var(--right-upper-lower-background);

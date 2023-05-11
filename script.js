@@ -1,4 +1,4 @@
-console.log("Hello World!");
+/* console.log("Hello World!");
 
 function setTheme() 
 {
@@ -9,26 +9,24 @@ function setTheme()
     document.querySelector('.theme-name').textContent = newTheme;
 }
 
-document.querySelector('.theme-toggle').addEventListener('click', setTheme);
+document.querySelector('.theme-toggle').addEventListener('click', setTheme); */
 
 //Password mismatch
-const passwordEle = document.getElementById("password");
-const password = passwordEle.value;
-const confpasswordEle = document.getElementById("confpassword");
-const confpassword = confpasswordEle.value;
+const password = document.getElementById("password");
+const confpassword = document.getElementById("confpassword");
 const passwordError = document.getElementById("passwordError");
 
+/* console.log(password);
+console.log(confpassword); */
 
-// if (password != confpassword)
-// {
-//     console.log("No match!");  
-// }
 
-console.log(password);
-console.log(confpassword);
-
-while (password != confpassword)
+/* while (confpassword != password) 
 {
     passwordError.classList.add("password-mismatch");
-}
+} */
 
+/* const check = function() {
+    if (password.value != confpassword.value) {
+        passwordError.classList.add("password-mismatch")
+    }
+}; */
