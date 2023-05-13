@@ -1,5 +1,4 @@
-console.log("Hello World!");
-
+//TODO: Set theme Function
 /* function setTheme() 
 {
     const root = document.documentElement;
@@ -11,21 +10,13 @@ console.log("Hello World!");
 
 document.querySelector('.theme-toggle').addEventListener('click', setTheme); */
 
-//Password mismatch
+//Password mismatch variables
 const password = document.getElementById("password");
 const confpassword = document.getElementById("confpassword");
 const passwordError = document.getElementById("passwordError");
 const passwordMatch = document.getElementById("passwordMatch");
 
-/* console.log(password);
-console.log(confpassword); */
-
-
-/* while (confpassword != password) 
-{
-    passwordError.classList.add("password-mismatch");
-} */
-
+//Password mismatch function
 function check() {
     if (password.value === confpassword.value) {
         passwordError.classList.remove("password-mismatch");
@@ -35,4 +26,3 @@ function check() {
         passwordError.classList.add("password-mismatch");
     }
 }
-

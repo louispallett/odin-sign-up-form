@@ -9,14 +9,14 @@
     --font-colour: black;
 }
 
-:root.dark {
+/* :root.dark {
     --font-colour: white;
 }
 
 :root.light {
     --right-upper-lower-background: rgba(245, 238, 238, 0.514);
     --font-colour: black;
-}
+} */
 
 :root {
     font-family: var(--font);
