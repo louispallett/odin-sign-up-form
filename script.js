@@ -1,6 +1,6 @@
-/* console.log("Hello World!");
+console.log("Hello World!");
 
-function setTheme() 
+/* function setTheme() 
 {
     const root = document.documentElement;
     const newTheme = root.className === 'dark' ? 'light' : 'dark';
@@ -15,6 +15,7 @@ document.querySelector('.theme-toggle').addEventListener('click', setTheme); */
 const password = document.getElementById("password");
 const confpassword = document.getElementById("confpassword");
 const passwordError = document.getElementById("passwordError");
+const passwordMatch = document.getElementById("passwordMatch");
 
 /* console.log(password);
 console.log(confpassword); */
@@ -25,8 +26,13 @@ console.log(confpassword); */
     passwordError.classList.add("password-mismatch");
 } */
 
-/* const check = function() {
-    if (password.value != confpassword.value) {
-        passwordError.classList.add("password-mismatch")
+function check() {
+    if (password.value === confpassword.value) {
+        passwordError.classList.remove("password-mismatch");
+        passwordMatch.classList.add("password-match");
+    } else {
+        passwordMatch.classList.remove("password-match");
+        passwordError.classList.add("password-mismatch");
     }
-}; */
+}
+

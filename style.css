@@ -169,7 +169,7 @@ a:visited {
 
     input:valid {
         border: 1px solid rgb(7, 241, 7);
-        background-color: rgb(177, 243, 177);;
+        background-color: rgb(177, 243, 177);
     }
 
     input:focus {
@@ -201,7 +201,7 @@ a:visited {
         background-color: #6bc7f1;
     }
 
-/*     .password-mismatch::after {
+    .password-mismatch::after {
         content: "*Passwords do not match";
         position: absolute;
         color: rgb(252, 0, 0);
@@ -209,14 +209,18 @@ a:visited {
         font-weight: bold;
     }
 
+   /*  input:invalid {
+        border: 1px solid rgb(255, 0, 0);
+        background-color: none;
+    } */
+
     .password-match::after {
         content: "Passwords match!";
         position: absolute;
-        bottom: 0;
-        color: rgb(0, 252, 13);
+        color: rgb(16, 168, 23);
         font-size: .9rem;
         font-weight: bold;
-    } */
+    }
 
     .lower {
         background-color: var(--right-upper-lower-background);
